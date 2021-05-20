@@ -4,6 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import './fonts/Graphik/GraphikRegular.otf'
+import './fonts/Graphik/GraphikBold.otf'
+import './fonts/Graphik/GraphikLight.otf'
+import './fonts/Graphik/GraphikMedium.otf'
+import './fonts/Graphik/GraphikSemibold.otf'
+import './fonts/Graphik/GraphikThin.otf'
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
