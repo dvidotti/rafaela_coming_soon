@@ -40,6 +40,13 @@
   padding-bottom: 50px;
 }
 
+.big-text {
+  letter-spacing: 0.84px;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 57px;
+}
+
 .links-rows {
   width: 200px;
   padding-top: 13px;
@@ -62,4 +69,54 @@
 }
 .link:hover{
   color: #959595
+}
+
+@media screen and (max-width: 400px) {
+  .body-about{
+    padding: 0px;
+    display: block;
+  }
+  .about-container {
+    width: 100%;
+    height:auto;
+    overflow-y: none;
+  }
+  .mobile-version {
+    display: flex;
+    justify-content: space-between;
+  }
+  .about-scroll-section {
+    padding: 40px;
+    padding-right: 40px;
+  }
+  
+  .right-inner-container-about {
+    padding: 40px;
+    padding-top: 0;
+  }
+
+  .big-text {
+    font-size: 1.5rem;
+    line-height: 51px;
+  }
+
+  .list-container {
+    font-size: 1.1rem;
+  }
+
+  .hide-on-mobile {
+    display: none;
+  }
+
+  .right-container-about {
+    width: 100%;
+    height: auto;
+  }
+
+  .links-rows {
+    width: 100%;
+  }
+  .list-inner-container{
+    width: 100%;
+  }
 }

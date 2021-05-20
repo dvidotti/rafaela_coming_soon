@@ -17,8 +17,9 @@ const About = (props) => {
      <main className="body-about">
       <section className="about-container">
         <div className="about-scroll-section">
-          <div className="logo nav-container">
-            <span className="nav-link white">RV</span>
+          <div className="logo nav-container mobile-version">
+            <span onClick={() => sendToHome()} className="nav-link white">RV</span>
+            {/* <span onClick={() => sendToHome()} className="nav-link white">home</span> */}
           </div>
           <div className="bottom-space">
             <span className="big-text">
@@ -47,8 +48,8 @@ const About = (props) => {
       </section>
       <section className="right-container-about">
         <div className="right-inner-container-about">
-          <div className="nav-container">
-            <div onClick={() => sendToHome()} className="nav-link side-nav nav-container">
+          <div className="nav-container hide-on-mobile">
+            <div onClick={() => sendToHome()} className="nav-link side-nav nav-container hide-on-mobile">
               <span className="nav-link">home</span>
             </div>
           </div>
@@ -56,7 +57,7 @@ const About = (props) => {
             <img className="image-about" src='rafa_pic.png' alt="Rafaela Portrait"/>
           </div>
           <div className="list-outer-container">
-            <div>
+            <div className="list-inner-container">
               <div className="links-rows">
                 <a
                   href="mailto:hi@rafaelavinotti.com" 
