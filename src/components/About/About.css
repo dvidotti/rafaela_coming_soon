@@ -71,7 +71,7 @@
   color: #959595
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   .body-about{
     padding: 0px;
     display: block;
