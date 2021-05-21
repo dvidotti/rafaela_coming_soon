@@ -21,6 +21,9 @@ const About = (props) => {
             <span onClick={() => sendToHome()} className="nav-link white">RV</span>
             {/* <span onClick={() => sendToHome()} className="nav-link white">home</span> */}
           </div>
+          <div className="about-picture-container show-in-mobile paddingMob">
+            <img className="image-about" src='rafa_pic.png' alt="Rafaela Portrait"/>
+          </div>
           <div className="bottom-space">
             <span className="big-text">
             I’m an Italian/ Brazilian Designer with a focus on creative strategy,
@@ -53,7 +56,7 @@ const About = (props) => {
               <span className="nav-link">home</span>
             </div>
           </div>
-          <div className="about-picture-container">
+          <div className="about-picture-container hide-on-mobile">
             <img className="image-about" src='rafa_pic.png' alt="Rafaela Portrait"/>
           </div>
           <div className="list-outer-container">
@@ -86,7 +89,7 @@ const About = (props) => {
               <div className="links-rows-last">
                 <a
                   target="_blank"
-                  hred="https://cz.pinterest.com/rafaelavinotti/"
+                  href="https://cz.pinterest.com/rafaelavinotti/"
                   className="link"
                   >Pinterest
                 </a>

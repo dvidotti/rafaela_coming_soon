@@ -1,5 +1,6 @@
 @font-face {
   font-family: 'Graphik';
+  font-weight: 350;
   src: local('GraphikRegular'), url(./fonts/Graphik/GraphikRegular.otf) format('opentype');
 }
 

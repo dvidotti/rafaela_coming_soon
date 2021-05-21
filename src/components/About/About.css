@@ -43,7 +43,7 @@
 .big-text {
   letter-spacing: 0.84px;
   font-size: 2.4rem;
-  font-weight: 400;
+  font-weight: 350;
   line-height: 57px;
 }
 
@@ -60,6 +60,7 @@
   padding-bottom: 13px;
   border-top: 1px solid #707070;
   border-bottom: 1px solid #707070;
+  font-weight: 400;
 }
 
 .link{
@@ -69,6 +70,10 @@
 }
 .link:hover{
   color: #959595
+}
+
+.show-in-mobile {
+  display: none;
 }
 
 @media screen and (max-width: 600px) {
@@ -86,8 +91,8 @@
     justify-content: space-between;
   }
   .about-scroll-section {
-    padding: 40px;
-    padding-right: 40px;
+    padding: 30px;
+    padding-right: 30px;
   }
   
   .right-inner-container-about {
@@ -96,8 +101,8 @@
   }
 
   .big-text {
-    font-size: 1.5rem;
-    line-height: 51px;
+    font-size: 1.6rem;
+    line-height: 40px;
   }
 
   .list-container {
@@ -118,5 +123,17 @@
   }
   .list-inner-container{
     width: 100%;
+  }
+
+  .list-outer-container{
+    padding-top: 0px;
+  }
+
+  .show-in-mobile {
+    display:block;
+  }
+
+  .paddingMob{
+    padding: 40px 0px;
   }
 }
