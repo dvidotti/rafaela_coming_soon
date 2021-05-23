@@ -17,35 +17,37 @@ const About = (props) => {
      <main className="body-about">
       <section className="about-container">
         <div className="about-scroll-section">
-          <div className="logo nav-container mobile-version">
-            <span onClick={() => sendToHome()} className="nav-link white">RV</span>
-            {/* <span onClick={() => sendToHome()} className="nav-link white">home</span> */}
-          </div>
-          <div className="about-picture-container show-in-mobile paddingMob">
-            <img className="image-about" src='rafa_pic.png' alt="Rafaela Portrait"/>
-          </div>
-          <div className="bottom-space">
-            <span className="big-text">
-            I’m an Italian/ Brazilian Designer with a focus on creative strategy,
-            brand design and user experience design.
-            </span>
-          </div>
-          <div className="bottom-space">
-            <span className="medium-text">
-              I have been working as a designer for 14 years,
-              but always combining other skills and interests
-              in my work. As a consultant, I was able to 
-              explore various professional possibilities and 
-              I can design experiences for brands, services and users.
-              I like working with people and projects I identify 
-              with and using my skills as tools to make a positive 
-              impact on the world.
-            </span>
-          </div>
-          <div>
-            {blockList.map((i, idx) => 
-              <ListWithTitle key={idx} block={i}/>
-            )}
+          <div className="width50">
+            <div className="logo nav-container mobile-version">
+              <span onClick={() => sendToHome()} className="nav-link white">RV</span>
+              {/* <span onClick={() => sendToHome()} className="nav-link white">home</span> */}
+            </div>
+            <div className="about-picture-container show-in-mobile paddingMob">
+              <img className="image-about" src='rafa_pic.png' alt="Rafaela Portrait"/>
+            </div>
+            <div className="bottom-space">
+              <span className="big-text">
+              I’m an Italian/ Brazilian Designer with a focus on creative strategy,
+              brand design and user experience design.
+              </span>
+            </div>
+            <div className="bottom-space">
+              <span className="medium-text">
+                I have been working as a designer for 14 years,
+                but always combining other skills and interests
+                in my work. As a consultant, I was able to 
+                explore various professional possibilities and 
+                I can design experiences for brands, services and users.
+                I like working with people and projects I identify 
+                with and using my skills as tools to make a positive 
+                impact on the world.
+              </span>
+            </div>
+            <div className="list-block">
+              {blockList.map((i, idx) => 
+                <ListWithTitle key={idx} block={i}/>
+              )}
+            </div>
           </div>
         </div>
       </section>
