@@ -17,7 +17,7 @@
 
 .about-container {
   width: 50%;
-  height:100vh;
+  height:84vh;
   overflow-y: auto;
 }
 
@@ -98,6 +98,10 @@
 
 .padTop10{
   padding-top: 10px;
+}
+
+.about-page {
+  height: 100vh;
 }
 
 @media screen and (max-width: 600px) {

@@ -16,7 +16,7 @@ const About = (props) => {
 
 
   return(
-    <React.Fragment>
+    <main className="about-page">
       <div className="nav-bar">
         <div className="logo nav-container left-nav mobile-version">
           <span onClick={() => sendToHome()} className="nav-link white">RV</span>
@@ -148,7 +148,7 @@ const About = (props) => {
           </div>
         </section>
       </section>
-    </React.Fragment>
+    </main>
   )
 }
 
