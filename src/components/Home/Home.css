@@ -11,9 +11,9 @@
 .side-nav {
   display: flex;
   justify-content: flex-end;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   padding-top: 4px;
-  font-weight: 350;
+  font-weight: 300;
 }
 
 .nav-container {
@@ -44,6 +44,13 @@
   line-height: 44px;
 }
 
+.large-text {
+  color: #EAEAEA;
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 44px;
+}
+
 .big-pad-right {
   padding-right: 120px;
 }
@@ -53,18 +60,22 @@
 }
 
 .huge-text {
-  font-size: 3.4rem;
+  font-size: 4.5rem;
   font-weight: 350;
   letter-spacing: 1px;
-  line-height: 68px;
+  line-height: 95px;
+}
+
+.slogan-box{
+  max-width: 850px;
 }
 
 .width65 {
   width: 65%;
 }
 
-.width90{
-  width: 90%;
+.maxW1030{
+  max-width: 1030px;
 }
 
 /* .nav-container {
@@ -76,7 +87,7 @@
   .huge-text {
     font-size: 3rem;
     letter-spacing: .5px;
-    line-height: 55px;
+    line-height: 71px;
     margin-top: 0;
   }
   .width65, .width90 {
