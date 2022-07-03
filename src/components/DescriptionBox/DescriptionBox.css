@@ -1,0 +1,28 @@
+.bottom-space {
+    padding-bottom: 50px;
+}
+
+.bottom-right-desktop {
+    padding: 0px;
+}
+
+.slogan-box {
+    max-width: 850px;
+}
+
+.maxW1030 {
+    max-width: 1030px;
+}
+
+.large-text {
+    color: #eaeaea;
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 44px;
+}
+
+@media screen and (max-width: 600px) {
+    .bottom-space {
+        padding-bottom: 30px;
+    }
+}
