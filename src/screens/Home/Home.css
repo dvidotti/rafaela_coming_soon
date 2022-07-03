@@ -1,0 +1,29 @@
+.body-home {
+    padding: 53px;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.big-pad-right {
+    padding-right: 120px;
+}
+
+.width65 {
+    width: 65%;
+}
+
+@media screen and (max-width: 600px) {
+    .width65,
+    .width90 {
+        width: 100%;
+    }
+    .body-home {
+        padding: 50px 16px;
+    }
+    .pad-mob {
+        padding-top: 7px;
+    }
+}

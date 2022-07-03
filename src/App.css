@@ -1,7 +1,54 @@
-.App{
-  color: white;
-  background-color: black;
-  font-family: Graphik;
+.App {
+    color: white;
+    background-color: black;
+    font-family: Graphik;
 }
 
+.body {
+    padding: 50px;
+    padding-top: 0px;
+}
 
+.white {
+    color: white !important;
+}
+
+.big-text {
+    letter-spacing: 0.84px;
+    font-size: 2.8rem;
+    font-weight: 350;
+    line-height: 65px;
+}
+
+.medium-text {
+    color: #eaeaea;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 44px;
+}
+
+.huge-text {
+    font-size: 4.5rem;
+    font-weight: 350;
+    letter-spacing: 1px;
+    line-height: 95px;
+}
+
+@media screen and (max-width: 600px) {
+    .body {
+        padding: 30px;
+        padding-top: 0px;
+        display: block;
+    }
+
+    .medium-text {
+        font-size: 1.5rem;
+        line-height: 37px;
+    }
+    .huge-text {
+        font-size: 3rem;
+        letter-spacing: 0.5px;
+        line-height: 71px;
+        margin-top: 0;
+    }
+}
