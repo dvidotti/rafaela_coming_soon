@@ -171,6 +171,7 @@
 
     .list-outer-container {
         padding: 0px;
+        display: block;
     }
 
     .footer-container {
