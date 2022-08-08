@@ -5,19 +5,12 @@
 }
 
 .body {
-    padding: 50px;
-    padding-top: 0px;
+    padding: 55px 70px 0px;
+    height: auto;
 }
 
 .white {
     color: white !important;
-}
-
-.big-text {
-    letter-spacing: 0.84px;
-    font-size: 2.8rem;
-    font-weight: 350;
-    line-height: 65px;
 }
 
 .medium-text {
@@ -28,17 +21,53 @@
 }
 
 .huge-text {
-    font-size: 4.5rem;
+    font-size: 5.3vw;
+    /* font-size: 4.5rem; */
     font-weight: 350;
-    letter-spacing: 1px;
-    line-height: 95px;
+    letter-spacing: 1.48px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    line-height: 6.2vw;
+}
+
+.big-text {
+    font-size: 3.9vw;
+    /* font-size: 4.5rem; */
+    font-weight: 350;
+    letter-spacing: 1.48px;
+    margin-top: 0px;
+    margin-bottom: 45px;
+    line-height: 4.9vw;
+}
+
+.link {
+    text-decoration: none;
+    /* border-bottom: 1px solid rgb(149, 149, 149); */
+    text-decoration-color: red;
+    color: gray;
+}
+
+.body-layout {
+    margin-top: 140px;
+    position: "relative";
+}
+
+.noMgBottom {
+    margin-bottom: 0px;
+}
+
+.noMgTop {
+    margin-top: 0px;
 }
 
 @media screen and (max-width: 600px) {
     .body {
-        padding: 30px;
-        padding-top: 0px;
+        padding: 40px 15px;
         display: block;
+    }
+
+    .body-layout {
+        margin-top: 100px;
     }
 
     .medium-text {
@@ -46,9 +75,9 @@
         line-height: 37px;
     }
     .huge-text {
-        font-size: 3rem;
-        letter-spacing: 0.5px;
-        line-height: 71px;
+        font-size: 7.5vw;
+        letter-spacing: 0.8px;
+        line-height: 31px;
         margin-top: 0;
     }
 }

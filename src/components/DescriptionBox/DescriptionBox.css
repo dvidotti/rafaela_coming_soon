@@ -7,7 +7,9 @@
 }
 
 .slogan-box {
-    max-width: 850px;
+    max-width: 90%;
+    z-index: 10;
+    margin-bottom: 6.3vw;
 }
 
 .maxW1030 {
@@ -17,12 +19,39 @@
 .large-text {
     color: #eaeaea;
     font-weight: 300;
-    font-size: 2rem;
-    line-height: 44px;
+    font-size: 2vw;
+    line-height: 3.6vw;
+}
+
+.home-title-box {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+.home-text-container {
+    width: 62vw;
 }
 
 @media screen and (max-width: 600px) {
     .bottom-space {
         padding-bottom: 30px;
+    }
+    .home-title-box {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+    }
+    .large-text {
+        font-size: 5.3vw;
+        line-height: 8vw;
+    }
+    .home-text-container {
+        width: 90vw;
+        margin-top: 35px;
+    }
+    .slogan-box {
+        max-width: 100%;
     }
 }

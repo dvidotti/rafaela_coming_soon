@@ -18,7 +18,9 @@ export default function TopToolBar({ path, linkText }) {
                 onClick={() => navigateTo(path)}
                 className="side-nav nav-container"
             >
-                <span className="nav-link pad-mob padTop10">{linkText}</span>
+                <span className="nav-link sec-nav-link pad-mob padTop10">
+                    {linkText}
+                </span>
             </div>
         </section>
     );

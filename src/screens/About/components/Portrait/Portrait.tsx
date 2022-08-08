@@ -1,6 +1,8 @@
+import "./Portrait.css";
+
 export default function Portrait() {
     return (
-        <div className="about-picture-container  paddingMob">
+        <div className=" portrait-container">
             <img
                 className="image-about"
                 src="images/rafa_pic.png"

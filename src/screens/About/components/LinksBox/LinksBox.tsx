@@ -18,12 +18,12 @@ export default function LinksBox() {
             classType: "link",
             text: "Instagram",
         },
-        {
-            target: "_blank",
-            href: "https://cz.pinterest.com/rafaelavinotti/",
-            classType: "link",
-            text: "Pinterest",
-        },
+        // {
+        //     target: "_blank",
+        //     href: "https://cz.pinterest.com/rafaelavinotti/",
+        //     classType: "link",
+        //     text: "Pinterest",
+        // },
     ];
     return (
         <div className="list-outer-container">
