@@ -196,4 +196,7 @@
         overflow-x: auto;
         justify-content: space-between;
     }
+    .big-text-about {
+        font-size: 7.8vw;
+    }
 }
