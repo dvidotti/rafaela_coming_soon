@@ -33,7 +33,7 @@ export function DescriptionBox({ component }) {
                         {/* <span className="huge-text">{presentText}</span> */}
                     </section>
                     <section className="home-text-container ">
-                        <div className="large-text">
+                        <div className="description-text">
                             I’m a multidisciplinary designer working from London
                             to everywhere. A new website is coming, but if you
                             want to see my full portfolio, just send me a

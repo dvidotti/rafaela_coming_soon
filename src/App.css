@@ -5,7 +5,7 @@
 }
 
 .body {
-    padding: 55px 70px 0px;
+    padding: 52px 54px 0px;
     height: auto;
 }
 
@@ -21,7 +21,7 @@
 }
 
 .huge-text {
-    font-size: 5.3vw;
+    font-size: 5.8vw;
     /* font-size: 4.5rem; */
     font-weight: 350;
     letter-spacing: 1.48px;
@@ -40,6 +40,10 @@
     line-height: 4.9vw;
 }
 
+.pr40 {
+    padding-right: 40px;
+}
+
 .link {
     text-decoration: none;
     /* border-bottom: 1px solid rgb(149, 149, 149); */
@@ -48,7 +52,7 @@
 }
 
 .body-layout {
-    margin-top: 140px;
+    margin-top: 12vw;
     position: "relative";
 }
 
@@ -62,12 +66,12 @@
 
 @media screen and (max-width: 600px) {
     .body {
-        padding: 40px 15px;
+        padding: 40px 15px 0px;
         display: block;
     }
 
     .body-layout {
-        margin-top: 100px;
+        margin-top: 140px;
     }
 
     .medium-text {
@@ -79,5 +83,8 @@
         letter-spacing: 0.8px;
         line-height: 31px;
         margin-top: 0;
+    }
+    .pr40 {
+        padding-right: 0px;
     }
 }

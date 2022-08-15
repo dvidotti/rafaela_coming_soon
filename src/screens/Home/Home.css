@@ -3,7 +3,7 @@
 }
 
 .logo {
-    font-size: 3.6rem;
+    font-size: 4vw;
     font-weight: 400;
 }
 
@@ -30,6 +30,6 @@
         font-size: 3.3rem;
     }
     .home-media-box-mob {
-        padding: 40px 0px 40px;
+        padding: 0px 0px 40px;
     }
 }

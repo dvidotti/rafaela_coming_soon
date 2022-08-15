@@ -1,19 +1,19 @@
 .navbar {
-    width: calc(100vw - 137px);
+    width: calc(100vw - 115px);
     display: flex;
     justify-content: space-between;
     position: fixed;
     top: 0;
     left: 0;
-    padding: 55px 70px;
-    background-color: black;
+    padding: 52px 54px;
+    background-color: transparent;
     z-index: 999;
 }
 
 .side-nav {
     display: flex;
     /* justify-content: flex-end; */
-    font-size: 2rem;
+    font-size: 2.5vw;
     padding-top: 4px;
     font-weight: 300;
 }

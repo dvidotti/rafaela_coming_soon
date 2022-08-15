@@ -31,12 +31,12 @@ const About = () => {
                     </div>
                     <section className="about-container">
                         <div className="left-block">
-                            <p className="big-text mb">{text}</p>
+                            <p className="big-text-about mb pr40">{text}</p>
                             <p className="large-text pt">{text2}</p>
                         </div>
                         <div className="right-block">
                             <Portrait />
-                            <div style={{ height: "50px" }}></div>
+                            <div style={{ height: "30px" }}></div>
                         </div>
                     </section>
 

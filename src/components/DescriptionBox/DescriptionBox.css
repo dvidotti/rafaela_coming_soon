@@ -19,8 +19,15 @@
 .large-text {
     color: #eaeaea;
     font-weight: 300;
-    font-size: 2vw;
+    font-size: 2.4vw;
     line-height: 3.6vw;
+}
+
+.description-text {
+    color: #eaeaea;
+    font-weight: 300;
+    font-size: 2.4vw;
+    line-height: 3.4vw;
 }
 
 .home-title-box {
@@ -53,5 +60,9 @@
     }
     .slogan-box {
         max-width: 100%;
+    }
+    .description-text {
+        font-size: 4.6vw;
+        line-height: 7.5vw;
     }
 }
