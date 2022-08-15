@@ -36,7 +36,7 @@ const About = () => {
                         </div>
                         <div className="right-block">
                             <Portrait />
-                            <div style={{ height: "30px" }}></div>
+                            {/* <div style={{ height: "30px" }}></div> */}
                         </div>
                     </section>
 
