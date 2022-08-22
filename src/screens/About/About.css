@@ -104,15 +104,24 @@
     line-height: 4.9vw;
 }
 
-.image-rotation {
+.image-rotation,
+.fixed-image-rotation {
     position: absolute;
     right: 0px;
     width: 140px;
-    bottom: -80px;
-    -webkit-animation: spin 4s linear infinite;
-    -moz-animation: spin 4s linear infinite;
-    animation: spin 4s linear infinite;
+    /* bottom: -80px; */
+    -webkit-animation: spin 8s linear infinite;
+    -moz-animation: spin 8s linear infinite;
+    animation: spin 8s linear infinite;
 }
+
+.face {
+    position: absolute;
+    right: 33px;
+    width: 75px;
+    z-index: 999;
+}
+
 @-moz-keyframes spin {
     100% {
         -moz-transform: rotate(360deg);
@@ -157,8 +166,15 @@
     }
 
     .image-rotation {
-        width: 110px;
-        top: 40px;
+        width: 80px;
+        bottom: -140px;
+        right: 10px;
+    }
+
+    .face {
+        bottom: -120px;
+        right: 30px;
+        width: 40px;
     }
 
     .left-block,

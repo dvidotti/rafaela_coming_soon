@@ -8,9 +8,14 @@ import { DescriptionBox } from "components/DescriptionBox/DescriptionBox";
 // Context
 import { useWindowSize } from "context/WindowSize.context";
 
+import { useState } from "react";
+
 // CSS
 import "./Home.css";
-import Portrait from "screens/About/components/VideoBox/VideoBox";
+
+// Components
+import VideoBox from "components/VideoBox/VideoBox";
+import VideoOverlayClick from "components/VideoOverlayClick/VideoOverlayClick";
 
 // Static
 const presentText = `Hi, I’m Rafaela Vinotti. This website is in transition – and
@@ -24,12 +29,20 @@ in my work, feel free to contact me =)`;
 
 const Home = () => {
     const { screenType } = useWindowSize();
+    const [fullScreen, setFullScreen] = useState(false);
 
     return (
         <main className="body">
             <TopToolBar path={"/about"} linkText={"about me"} />
             <div className="body-layout" style={{ position: "relative" }}>
-                <Portrait />
+                <VideoOverlayClick
+                    fullScreen={fullScreen}
+                    handleFullScreen={setFullScreen}
+                />
+                <VideoBox
+                    fullScreen={fullScreen}
+                    handleFullScreen={setFullScreen}
+                />
                 <DescriptionBox component={"home"} />
             </div>
         </main>
