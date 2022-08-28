@@ -64,6 +64,16 @@
     margin-top: 0px;
 }
 
+.link-underline {
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-decoration-thickness: 1px;
+}
+
+.link-underline:hover {
+    text-decoration-color: rgb(136, 136, 136);
+}
+
 @media screen and (max-width: 600px) {
     .body {
         padding: 40px 15px 0px;
@@ -81,7 +91,7 @@
     .huge-text {
         font-size: 7.5vw;
         letter-spacing: 0.8px;
-        line-height: 31px;
+        line-height: 35px;
         margin-top: 0;
     }
     .pr40 {

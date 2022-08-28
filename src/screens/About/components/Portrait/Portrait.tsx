@@ -4,7 +4,7 @@ export default function Portrait({ offset }) {
     return (
         <div
             className=" portrait-container"
-            style={{ top: `${13 - offset * 0.028}vw` }}
+            style={{ top: `${13 - offset * 0.026}vw` }}
         >
             <img
                 className="image-about"

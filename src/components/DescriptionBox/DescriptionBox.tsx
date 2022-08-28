@@ -42,9 +42,8 @@ export function DescriptionBox({ component }) {
                                 className="link"
                                 href="mailto:hello@rafaelavinotti.com"
                             >
-                                email
-                            </a>{" "}
-                            =)
+                                <span className="link-underline">email</span>
+                            </a>
                         </div>
                     </section>
                 </div>

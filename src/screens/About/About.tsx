@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import TopToolBar from "components/TopToolBar/TopToolBar";
 import LinksBox from "./components/LinksBox/LinksBox";
 import Portrait from "./components/Portrait/Portrait";
+import Stamp from "./components/Stamp/Stamp";
 
 import { blockList } from "./components/ListWithTitle/blockList";
 import ListWithTitle from "./components/ListWithTitle/ListWithTitle";
@@ -45,11 +46,11 @@ const About = () => {
 
     useEffect(() => {
         if (timer % 2 === 0) {
-            setImageSrc(2);
-        } else if (timer % 3 === 0) {
             setImageSrc(3);
+            // } else if (timer % 3 === 0) {
+            //     setImageSrc(3);
         } else {
-            setImageSrc(1);
+            setImageSrc(2);
         }
     }, [timer]);
 
@@ -60,39 +61,11 @@ const About = () => {
                 <section ref={stampImg}>
                     <div className="stamp-container">
                         <div className={"stamp-box"}>
-                            {screenType === "mobile" ? (
-                                <>
-                                    <img
-                                        className={"face"}
-                                        src={`images/face0${imageSrc}_animation.svg`}
-                                    />
-                                    <img
-                                        className={"image-rotation"}
-                                        src="images/text+circle_animation.svg"
-                                    />
-                                </>
-                            ) : (
-                                <>
-                                    <img
-                                        style={{
-                                            bottom: `${
-                                                -77 + (offset / 1) * 0.23
-                                            }px`,
-                                        }}
-                                        className={"face"}
-                                        src={`images/face0${imageSrc}_animation.svg`}
-                                    />
-                                    <img
-                                        style={{
-                                            bottom: `${
-                                                -110 + (offset / 1) * 0.23
-                                            }px`,
-                                        }}
-                                        className={"image-rotation"}
-                                        src="images/text+circle_animation.svg"
-                                    />
-                                </>
-                            )}
+                            <Stamp
+                                offset={offset}
+                                screen={screenType}
+                                imageSrc={imageSrc}
+                            />
                         </div>
                     </div>
                     <section className="about-container">

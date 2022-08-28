@@ -17,16 +17,6 @@ import "./Home.css";
 import VideoBox from "components/VideoBox/VideoBox";
 import VideoOverlayClick from "components/VideoOverlayClick/VideoOverlayClick";
 
-// Static
-const presentText = `Hi, I’m Rafaela Vinotti. This website is in transition – and
-so am I.`;
-
-const description = ` I’m a multidisciplinary designer based between London and
-Sao Paulo. I have been working as an independent consultant
-with studios and clients on a wide range of projects and
-brands. A new website is coming, but if you are interested
-in my work, feel free to contact me =)`;
-
 const Home = () => {
     const { screenType } = useWindowSize();
     const [fullScreen, setFullScreen] = useState(false);
