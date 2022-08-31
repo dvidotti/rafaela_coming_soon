@@ -65,13 +65,17 @@
 }
 
 .link-underline {
-    text-decoration: underline;
+    border-bottom: 1px solid white;
+    padding-bottom: 3px;
+    margin-left: 10px;
+    /* text-decoration: underline;
     text-decoration-color: white;
     text-decoration-thickness: 1px;
+    text-decoration-style: ; */
 }
 
 .link-underline:hover {
-    text-decoration-color: rgb(136, 136, 136);
+    border-bottom-color: rgb(136, 136, 136);
 }
 
 @media screen and (max-width: 600px) {
