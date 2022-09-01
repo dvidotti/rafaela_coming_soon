@@ -1,0 +1,14 @@
+.portrait-container {
+    padding-left: 40px;
+    position: sticky;
+    top: 13vw;
+    z-index: 0;
+}
+
+@media screen and (max-width: 600px) {
+    .picture-container {
+        position: relative;
+        display: block;
+        width: 100%;
+    }
+}

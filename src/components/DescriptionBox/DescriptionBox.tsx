@@ -4,13 +4,14 @@ import "./DescriptionBox.css";
 const presentText = `Hi, I’m Rafaela Vinotti. This website is in transition – and
 so am I.`;
 
-const description = ` I’m a multidisciplinary designer based between London and
-Sao Paulo. I have been working as an independent consultant
-with studios and clients on a wide range of projects and
-brands. A new website is coming, but if you are interested
-in my work, feel free to contact me =)`;
+const description = `I’m a multidisciplinary designer working from London to everywhere. A new website is coming, but if you want to see my full portfolio, just send me a request, feel free to contact me by email =)`;
+
+// Context
+// import { useWindowSize } from "context/WindowSize.context";
 
 export function DescriptionBox({ component }) {
+    // const { screenType } = useWindowSize();r
+
     return (
         <>
             {component === "about" && (
@@ -24,14 +25,28 @@ export function DescriptionBox({ component }) {
                 </>
             )}
             {component === "home" && (
-                <>
+                <div className="home-title-box">
                     <section className="slogan-box">
-                        <span className="huge-text">{presentText}</span>
+                        <p className="huge-text">Hi, I’m Rafaela Vinotti.</p>
+                        <p className="huge-text">This website is in</p>
+                        <p className="huge-text"> transition – and so am I.</p>
+                        {/* <span className="huge-text">{presentText}</span> */}
                     </section>
-                    <section className="maxW1030">
-                        <h3 className="large-text">{description}</h3>
+                    <section className="home-text-container ">
+                        <div className="description-text">
+                            I’m a multidisciplinary designer working from London
+                            to everywhere. A new website is coming, but if you
+                            want to see my full portfolio, just send me a
+                            request, feel free to contact me by{" "}
+                            <a
+                                className="link"
+                                href="mailto:hello@rafaelavinotti.com"
+                            >
+                                <span className="link-underline">email</span>
+                            </a>
+                        </div>
                     </section>
-                </>
+                </div>
             )}
         </>
     );

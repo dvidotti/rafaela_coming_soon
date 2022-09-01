@@ -1,0 +1,30 @@
+.video-overlay-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 43%;
+    height: auto;
+    z-index: 999;
+    cursor: pointer;
+    color: transparent;
+}
+
+.video-overlay-container-full {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 998;
+    cursor: none;
+    background-color: rgba(252, 252, 252, 0.135);
+    pointer-events: none;
+}
+
+@media screen and (max-width: 600px) {
+    .video-overlay-container {
+        position: relative;
+        display: none;
+        width: 100%;
+    }
+}
